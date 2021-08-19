@@ -45,5 +45,5 @@ diff = tend - tstart
 print("Scan completed in " + str(diff))
 datei = open("ports.txt","r")
 oports = datei.read()
-print("Die Ports " + oports + "sind offen")
+print("The Ports " + oports + "are opened!")
 datei.close()
