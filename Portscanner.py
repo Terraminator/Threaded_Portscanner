@@ -6,9 +6,12 @@ from datetime import datetime
 
 
 content = ""
-target = "46.223.131.234"
+target = "Your Ip"
 #targetIP = socket.gethostbyname(target)
 targetIP = target
+
+with open("ports.txt", "w") as f:
+	f.write("")
 
 tstart = datetime.now()
 def scanner(y):
@@ -18,7 +21,7 @@ def scanner(y):
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	res = sock.connect_ex((targetIP, p))
 	if res == 0:
-		print("Offene Verbindung in Port " + str(p))
+		print("Open Connection in Port: " + str(p))
 		datei = open("ports.txt","a+")
 		datei.write(str(p) + ", ")
 		datei.close()
