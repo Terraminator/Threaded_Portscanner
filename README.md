@@ -13,7 +13,7 @@ This Software is written in Python, its fast, but don't try it on an low Perform
 
 ### Usage
 You have to change the file ips.txt to your targets  
-You can also pipe the output ips of wlanscanner.py into this Portscanner therfore you just have to run wlanscanner with args --pipe and after that start this Portscanner  
+You can also pipe the output ips of wlanscanner.py into this Portscanner therfore you just have to run wlanscanner with args --pipe and the Portscanner will automatically scan all of the ips in the network! 
 
 ## Ascii Art  
 The Ascii Art is made with: https://patorjk.com/software/taag/
